@@ -1,89 +1,65 @@
 * {
     padding: 0;
     margin: 0;
-}
-
-.our-team {
-    width: 100%;
-}
-
-.our-team-heading,.our-students-heading {
-    width: 1300px;
-    font-family: 'Bodoni Moda', serif;
-    font-size: 36px;
-    color: white;
-    margin:auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.our-team-heading {
-    text-transform: uppercase;
-}
-
-.directors-background {
-    height: 600px;
-    background-color: #5A226D;
-}
-
-.our-board-directors-members {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(3, 300px);
-    grid-template-rows: auto;
-    gap: 40px;
-}
-
-.directors {
-    margin: auto;
-    width: 1300px;
-}
-
-.our-directors-heading {
-    font-family: 'Bodoni Moda', serif;
-    font-size: 36px;
-    color: white;
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 120px;
-}
-
-.our-students-heading {
-    padding-bottom: 50px;
-    padding-top: 0;
-    border-bottom: 3px solid white;
-}
-
-.our-grid-directors h4 {
-    padding-top: 20px;
-    font-size: 20px;
-    color: #e87461;
-    text-align: center;
-}
-
-.our-student-directors-members {
-    display: grid;
-    grid-template-columns: repeat(2, 600px);
-    grid-template-rows: repeat(3, 200px);
-    column-gap: 120px;
-    justify-content: center;
-}
-
-.our-grid-students{
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-}
-
-.our-grid-students h4{
-    font-size: 20px;
-    color: #e87461;
-    width: 300px;
-    vertical-align: text-top;
-    padding-bottom: 50px;
-}
-
-.our-grid-students p {
-    color: #62656A;
-    width: 300px;
-    font-size: 18px;
-}
+    box-sizing: border-box; /* Add box-sizing property */
+  }
+  
+  /* Adjustments for smaller screens */
+  @media screen and (max-width: 768px) {
+    .our-team-heading,
+    .our-students-heading {
+      width: 90%; /* Adjust width to fit smaller screens */
+      font-size: 24px; /* Decrease font size for smaller screens */
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  
+    .directors-background {
+      height: auto; /* Remove fixed height for flexibility */
+      padding-bottom: 50px;
+    }
+  
+    .our-board-directors-members {
+      grid-template-columns: repeat(2, 250px); /* Adjust grid columns for smaller screens */
+      gap: 20px; /* Decrease gap for smaller screens */
+    }
+  
+    .directors {
+      width: 90%; /* Adjust width to fit smaller screens */
+    }
+  
+    .our-directors-heading {
+      font-size: 24px; /* Decrease font size for smaller screens */
+      padding-top: 50px;
+      padding-bottom: 60px;
+    }
+  
+    .our-students-heading {
+      padding-bottom: 30px;
+      padding-top: 0;
+      border-bottom: none; /* Remove bottom border for smaller screens */
+    }
+  
+    .our-student-directors-members {
+      grid-template-columns: repeat(1, 100%); /* Adjust grid columns for smaller screens */
+      grid-template-rows: auto; /* Remove fixed rows for flexibility */
+      column-gap: 0; /* Remove column gap for smaller screens */
+    }
+  
+    .our-grid-students {
+      display: block; /* Change to block layout for smaller screens */
+      margin-bottom: 20px; /* Add some spacing between student members */
+    }
+  
+    .our-grid-students h4 {
+      padding-top: 10px; /* Adjust padding for smaller screens */
+      font-size: 18px; /* Decrease font size for smaller screens */
+      width: 100%; /* Adjust width to fit smaller screens */
+    }
+  
+    .our-grid-students p {
+      width: 100%; /* Adjust width to fit smaller screens */
+      font-size: 16px; /* Decrease font size for smaller screens */
+    }
+  }
+  
